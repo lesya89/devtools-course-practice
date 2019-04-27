@@ -21,8 +21,29 @@ SimpleNumbers check_eng;
 int a = 6;
 int b = -7;
 // act
-res = check_eng.print(a, b);
+res = check_eng.array(a, b);
 // assert
 EXPECT_EQ(-1, res);
 }
    
+TEST(SimpleNumbersTest, The_Null_Border_Mistake) {
+// arrange
+SimpleNumbers check_eng;
+int a = 0;
+int b = 0;
+// act
+res = check_eng.array(a, b);
+// assert
+EXPECT_EQ(-1, res);
+}
+
+TEST(SimpleNumbersTest, The_Right_Border_Mistake) {
+// arrange
+SimpleNumbers check_eng;
+int a = 6;
+int b = -7;
+// act
+res = check_eng.array(a, b);
+// assert
+EXPECT_EQ(-1, res);
+}
