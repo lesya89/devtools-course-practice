@@ -2,7 +2,7 @@
 
 #include "include/print-simple-numbers.h"
 
-int SimpleNumers::Check(int n) {
+int SimpleNumbers::Check(int n) {
 if(n == 1) 
     return 0;
 
@@ -12,26 +12,24 @@ for (int i = 2; i * i <= n; i++) {
     else 
         return n;
     }
-
 }
 
-int* SimpleNumers::array(const int a, const int b) {
+int* SimpleNumbers::array(const int a, const int b) {
 if ((b - a) <= 0)
-    return -1;
+    break;
 else {
     int *array = new int[(b-a) + 1];
     
-    for (int i = a; i <= b; i++)
-    { 
+    for (int i = a; i <= b; i++) { 
         array[i] = Check(i);
     }
     return array;
 }
 }
 
-void SimpleNumers::print(int *array, const int a, const int b) {
+void SimpleNumbers::print(int *array, const int a, const int b) {
     if ((b - a) <=0
-    for(int i = a; i <= b; i++)
+    for (int i = a; i <= b; i++)
         if (array[i] != 0)
           cout << array[i] << " ";
 }
