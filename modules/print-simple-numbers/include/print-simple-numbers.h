@@ -4,7 +4,6 @@
 #define MODULES_PRINT_SIMPLE_NUMBERS_INCLUDE_PRINT_SIMPLE_NUMBERS_H_
 
 #include <iostream>
-#include <cmath>
 
 class SimpleNumbers {
  public:
