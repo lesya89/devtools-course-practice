@@ -1,8 +1,11 @@
 // Copyright 2019 by Zolotareva Olesya  
 
+#include <iostream>
+
 #include "include/print-simple-numbers.h"
 
 int SimpleNumbers::Check(const int n) {
+if (n < 1) return -1;
 if(n == 1) 
         return 0;
     else {
@@ -15,12 +18,14 @@ if(n == 1)
 }
 
 int SimpleNumbers::print(const int a, const int b) {
-int tmp = 0;
-if ((b <= 0 ) || (a <= 0)) {
+
+if ((b < 1 ) || (a < 1) || (a == b)) {
        std::cout << "error";
        return -1;        
-} else {
-    for (int i = a; i <= b; i++) { 
+} 
+
+for (int i = a; i <= b; i++) {
+        int tmp = 0; 
         tmp = Check(i);
             if (tmp != 0) {
                 std::cout << "tmp"<< " ";
@@ -29,6 +34,5 @@ if ((b <= 0 ) || (a <= 0)) {
                 std::cout << " ";
                 return 0;
         }
-}
 }
 }
