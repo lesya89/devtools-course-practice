@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include "print-simple-numbers.h"
+#include "include/print-simple-numbers.h"
 
 int SimpleNumbers::Check(int n) {
 if (n < 1)
