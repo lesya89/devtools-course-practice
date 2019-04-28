@@ -4,12 +4,13 @@
 
 #include "include/print-simple-numbers.h"
 
-int SimpleNumbers::Check(const int n) {
+int SimpleNumbers::Check(int n) {
 if (n < 1) return -1;
-if (n == 1) {
-        return 0;
-    } else {
-        for (int i = 2; i * i <= n; i++) {
+    else {
+        if (n == 1) {
+          return 0;
+        } else {
+           for (int i = 2; i * i <= n; i++) {
                 if (n % i == 0)
                     return 0;
                 else
@@ -17,13 +18,12 @@ if (n == 1) {
     }
 }
 }
-
-int SimpleNumbers::print(const int a, const int b) {
-if ((b < 1 ) || (a < 1) || (a == b) || (a > b)) {
+}
+int SimpleNumbers::print(int a, int b) {
+if ((b <= 1) || (a < 1) || (a == b) || (a > b)) {
        std::cout << "error";
        return -1;
-}
-
+} else {
 for (int i = a; i <= b; i++) {
         int tmp = 0;
         tmp = Check(i);
@@ -34,5 +34,6 @@ for (int i = a; i <= b; i++) {
                 std::cout << " ";
                 return 0;
         }
+}
 }
 }

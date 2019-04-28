@@ -5,8 +5,8 @@
 
 class SimpleNumbers {
  public:
-    int Check(const int num);
-    int print(const int a, const int b);
+    int Check(int num);
+    int print(int a, int b);
 };
 
 #endif  // MODULES_PRINT_SIMPLE_NUMBERS_INCLUDE_PRINT_SIMPLE_NUMBERS_H_
