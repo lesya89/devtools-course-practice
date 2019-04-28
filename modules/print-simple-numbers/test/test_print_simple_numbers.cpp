@@ -76,7 +76,7 @@ TEST(SimpleNumbersTest, The_Null_Numbers) {
     EXPECT_EQ(0, res);
 }
 
-TEST(SimpleNumbersTest, The_Null_Numbers) {
+TEST(SimpleNumbersTest, Few_Simple_Numbers) {
     // arrange
     SimpleNumbers check_eng;
     int a = 9;
@@ -119,4 +119,16 @@ TEST(SimpleNumbersTest, The_Simple_Number) {
     res = check_eng.Check(n);
     // assert
     EXPECT_EQ(7, res);
+}
+
+TEST(SimpleNumbersTest, The_Empty_Array) {
+    // arrange
+    SimpleNumbers check_eng;
+    int a = 3;
+    int b = 3;
+    int *res;
+    // act
+    res = check_eng.Print(a, b);
+    // assert
+    EXPECT_EQ(NULL, res);
 }

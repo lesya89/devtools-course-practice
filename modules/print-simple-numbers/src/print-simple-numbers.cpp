@@ -43,7 +43,8 @@ int *array = new int[size];
 for (int i = a; i <= b; i++) {
         int tmp = 0;
         tmp = Check(i);
-        array[i] = i;
+        if (tmp != 0 )
+            array[i] = i;
         }
 return array;
 }
