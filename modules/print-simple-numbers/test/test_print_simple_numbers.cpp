@@ -132,3 +132,27 @@ TEST(SimpleNumbersTest, The_Empty_Array) {
     // assert
     EXPECT_EQ(NULL, res);
 }
+
+TEST(SimpleNumbersTest, The_Right_Array) {
+    // arrange
+    SimpleNumbers check_eng;
+    int a = 3;
+    int b = 4;
+    int *res;
+    // act
+    res = check_eng.Print(a, b);
+    // assert
+    EXPECT_EQ({3}, res);
+}
+
+TEST(SimpleNumbersTest, The_Right_Array) {
+    // arrange
+    SimpleNumbers check_eng;
+    int a = 3;
+    int b = 5;
+    int *res;
+    // act
+    res = check_eng.Print(a, b);
+    // assert
+    EXPECT_EQ({3, 5}, res);
+}
