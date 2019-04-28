@@ -130,7 +130,7 @@ TEST(SimpleNumbersTest, The_Empty_Array) {
     // act
     res = check_eng.Print(a, b);
     // assert
-    EXPECT_EQ(NULL, res);
+    ASSERT_TRUE(res);
 }
 
 TEST(SimpleNumbersTest, The_Right_Array) {
@@ -162,18 +162,6 @@ TEST(SimpleNumbersTest, The_check_array) {
     SimpleNumbers check_eng;
     int a = 3;
     int b = 9;
-    int *res;
-    // act
-    res = check_eng.Print(a, b);
-    // assert
-    ASSERT_TRUE(res);
-}
-
-TEST(SimpleNumbersTest, The_check_arraynew) {
-    // arrange
-    SimpleNumbers check_eng;
-    int a = 7;
-    int b = 15;
     int *res;
     // act
     res = check_eng.Print(a, b);
