@@ -121,18 +121,6 @@ TEST(SimpleNumbersTest, The_Simple_Number) {
     EXPECT_EQ(7, res);
 }
 
-TEST(SimpleNumbersTest, The_Empty_Array) {
-    // arrange
-    SimpleNumbers check_eng;
-    int a = 3;
-    int b = 3;
-    int *res;
-    // act
-    res = check_eng.Print(a, b);
-    // assert
-    ASSERT_FALSE(res);
-}
-
 TEST(SimpleNumbersTest, The_Right_Array) {
     // arrange
     SimpleNumbers check_eng;
