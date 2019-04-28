@@ -5,9 +5,9 @@
 #include "include/print-simple-numbers.h"
 
 int SimpleNumbers::Check(int n) {
-if (n < 1)
+if (n < 1) {
     return -1;
-else {
+} else {
     if (n == 1) {
         return 0;
     } else {
@@ -33,7 +33,7 @@ for (int i = a; i <= b; i++) {
                 std::cout << " ";
                 return 0;
         }
-return tmp;
 }
+return 0;
 }
 }
