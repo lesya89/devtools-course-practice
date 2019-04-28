@@ -16,7 +16,7 @@ TEST(SimpleNumbersTest, The_Right_Border_Mistake) {
     EXPECT_EQ(-1, res);
 }
 
-TEST(SimpleNumbersTest, The_Right_Border_Mistake) {
+TEST(SimpleNumbersTest, The_Left_Border_Mistake) {
     // arrange
     SimpleNumbers check_eng;
     int a = -10;
