@@ -130,7 +130,7 @@ TEST(SimpleNumbersTest, The_Empty_Array) {
     // act
     res = check_eng.Print(a, b);
     // assert
-    EXPECT_EQ(NULL, res);
+    ASSERT_FALSE(res);
 }
 
 TEST(SimpleNumbersTest, The_Right_Array) {
