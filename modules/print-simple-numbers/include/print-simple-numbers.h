@@ -7,7 +7,7 @@
 
 class SimpleNumbers {
  public:
-    int Check(int num);
+    int Check(const int num);
     void print(const int a, const int b);
 };
 
