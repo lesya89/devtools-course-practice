@@ -139,13 +139,13 @@ TEST(SimpleNumbersTest, The_Right_Array) {
     int a = 3;
     int b = 4;
     int *res;
-    // act
+    // act 
     res = check_eng.Print(a, b);
     // assert
-    EXPECT_EQ({3}, res);
+    ASSERT_ANY_THROW(res);
 }
 
-TEST(SimpleNumbersTest, The_Right_Array) {
+TEST(SimpleNumbersTest, The_Right_Arraynew) {
     // arrange
     SimpleNumbers check_eng;
     int a = 3;
@@ -154,5 +154,5 @@ TEST(SimpleNumbersTest, The_Right_Array) {
     // act
     res = check_eng.Print(a, b);
     // assert
-    EXPECT_EQ({3, 5}, res);
+    ASSERT_ANY_THROW(res);
 }
