@@ -8,8 +8,7 @@
 class SimpleNumbers {
  public:
     int Check(int num);
-    int* array(const int a, const int b);
-    void print(int *array);
+    void print(const int a, const int b);
 };
 
 #endif  // MODULES_PRINT_SIMPLE_NUMBERS_INCLUDE_SEARCH_BINARY_H_

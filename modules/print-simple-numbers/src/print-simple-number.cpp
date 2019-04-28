@@ -14,22 +14,19 @@ for (int i = 2; i * i <= n; i++) {
     }
 }
 
-int* SimpleNumbers::array(const int a, const int b) {
-if ((b - a) <= 0)
-    break;
-else {
-    int *array = new int[(b-a) + 1];
-    
+void SimpleNumbers::print(const int a, const int b) {
+int tmp;
+if ((b <= 0 ) || (a <= 0) {
+        cout << "error";
+        
+    } else {
     for (int i = a; i <= b; i++) { 
-        array[i] = Check(i);
-    }
-    return array;
+        tmp = Check(i);
+        if (tmp != 0) {
+            cout << "tmp"<< " ";
+        } else {
+            cout << " ";
+        }
 }
 }
-
-void SimpleNumbers::print(int *array, const int a, const int b) {
-    if ((b - a) <=0
-    for (int i = a; i <= b; i++)
-        if (array[i] != 0)
-          cout << array[i] << " ";
 }
