@@ -139,10 +139,10 @@ TEST(SimpleNumbersTest, The_Right_Array) {
     int a = 3;
     int b = 4;
     int *res;
-    // act 
+    // act
     res = check_eng.Print(a, b);
     // assert
-    ASSERT_ANY_THROW(res);
+    ASSERT_TRUE(res);
 }
 
 TEST(SimpleNumbersTest, The_Right_Arraynew) {
@@ -154,5 +154,5 @@ TEST(SimpleNumbersTest, The_Right_Arraynew) {
     // act
     res = check_eng.Print(a, b);
     // assert
-    ASSERT_ANY_THROW(res);
+    ASSERT_TRUE(res);
 }
