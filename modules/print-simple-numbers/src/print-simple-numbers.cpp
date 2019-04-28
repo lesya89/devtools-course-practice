@@ -47,5 +47,6 @@ for (int i = a; i <= b; i++) {
             array[i] = i;
         }
 return array;
+delete [] array;
 }
 }
