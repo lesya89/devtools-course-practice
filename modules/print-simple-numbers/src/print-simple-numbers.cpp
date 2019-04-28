@@ -1,4 +1,4 @@
-// Copyright 2019 by Zolotareva Olesya  
+// Copyright 2019 by Zolotareva Olesya
 
 #include <iostream>
 
@@ -6,26 +6,26 @@
 
 int SimpleNumbers::Check(const int n) {
 if (n < 1) return -1;
-if(n == 1) 
+if (n == 1) {
         return 0;
-    else {
+    } else {
         for (int i = 2; i * i <= n; i++) {
-                if(n % i == 0)
+                if (n % i == 0)
                     return 0;
-    return n;
+                else
+                    return n;
     }
 }
 }
 
 int SimpleNumbers::print(const int a, const int b) {
-
-if ((b < 1 ) || (a < 1) || (a == b)) {
+if ((b < 1 ) || (a < 1) || (a == b) || (a > b)) {
        std::cout << "error";
-       return -1;        
-} 
+       return -1;
+}
 
 for (int i = a; i <= b; i++) {
-        int tmp = 0; 
+        int tmp = 0;
         tmp = Check(i);
             if (tmp != 0) {
                 std::cout << "tmp"<< " ";
