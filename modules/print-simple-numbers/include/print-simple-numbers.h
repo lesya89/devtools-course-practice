@@ -6,7 +6,8 @@
 class SimpleNumbers {
  public:
     int Check(int num);
-    int print(int a, int b);
+    int* Print(int a, int b);
+    int SizeOfArray(int a, int b);
 };
 
 #endif  // MODULES_PRINT_SIMPLE_NUMBERS_INCLUDE_PRINT_SIMPLE_NUMBERS_H_

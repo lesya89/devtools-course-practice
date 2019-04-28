@@ -11,7 +11,7 @@ TEST(SimpleNumberTest, The_Left_Border_Mistake) {
     int b = 5;
     int res;
     // act
-    res = check_eng.print(a, b);
+    res = check_eng.SizeOfArray(a, b);
     // assert
     EXPECT_EQ(-1, res);
 }
@@ -23,7 +23,7 @@ TEST(SimpleNumbersTest, The_Right_Border_Mistake) {
     int b = -7;
     int res;
     // act
-    res = check_eng.print(a, b);
+    res = check_eng.SizeOfArray(a, b);
     // assert
     EXPECT_EQ(-1, res);
 }
@@ -35,7 +35,7 @@ TEST(SimpleNumbersTest, The_Null_Border_Mistake) {
     int b = 0;
     int res;
     // act
-    res = check_eng.print(a, b);
+    res = check_eng.SizeOfArray(a, b);
     // assert
     EXPECT_EQ(-1, res);
 }
@@ -47,7 +47,7 @@ TEST(SimpleNumbersTest, The_Big_Left_Border_Mistake) {
     int b = 2;
     int res;
     // act
-    res = check_eng.print(a, b);
+    res = check_eng.SizeOfArray(a, b);
     // assert
     EXPECT_EQ(-1, res);
 }
@@ -59,9 +59,33 @@ TEST(SimpleNumbersTest, The_Null_Interval) {
     int b = 5;
     int res;
     // act
-    res = check_eng.print(a, b);
+    res = check_eng.SizeOfArray(a, b);
     // assert
     EXPECT_EQ(-1, res);
+}
+
+TEST(SimpleNumbersTest, The_Null_Numbers) {
+    // arrange
+    SimpleNumbers check_eng;
+    int a = 9;
+    int b = 10;
+    int res;
+    // act
+    res = check_eng.SizeOfArray(a, b);
+    // assert
+    EXPECT_EQ(0, res);
+}
+
+TEST(SimpleNumbersTest, The_Null_Numbers) {
+    // arrange
+    SimpleNumbers check_eng;
+    int a = 9;
+    int b = 15;
+    int res;
+    // act
+    res = check_eng.SizeOfArray(a, b);
+    // assert
+    EXPECT_EQ(2, res);
 }
 
 TEST(SimpleNumbersTest, The_Negative_Number) {
@@ -73,4 +97,26 @@ TEST(SimpleNumbersTest, The_Negative_Number) {
     res = check_eng.Check(n);
     // assert
     EXPECT_EQ(-1, res);
+}
+
+TEST(SimpleNumbersTest, The_Complex_Number) {
+    // arrange
+    SimpleNumbers check_eng;
+    int n = 6;
+    int res;
+    // act
+    res = check_eng.Check(n);
+    // assert
+    EXPECT_EQ(0, res);
+}
+
+TEST(SimpleNumbersTest, The_Simple_Number) {
+    // arrange
+    SimpleNumbers check_eng;
+    int n = 7;
+    int res;
+    // act
+    res = check_eng.Check(n);
+    // assert
+    EXPECT_EQ(7, res);
 }

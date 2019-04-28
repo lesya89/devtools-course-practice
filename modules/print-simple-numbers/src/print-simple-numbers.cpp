@@ -15,25 +15,36 @@ if (n < 1) {
             if (n % i == 0)
                 return 0; }
         return n;
+        }
+    }
 }
-}
-}
-int SimpleNumbers::print(int a, int b) {
+int SimpleNumbers::SizeOfArray(int a, int b) {
 if ((b <= 1) || (a < 1) || (a >= b)) {
-       std::cout << "error";
        return -1;
 } else {
-int tmp = 0;
-for (int i = a; i <= b; i++) {
+int size = 0;
+    for (int i = a; i <= b; i++) {
+        int tmp = 0;
         tmp = Check(i);
-            if (tmp != 0) {
-                std::cout << "tmp"<< " ";
-                return tmp;
-            } else {
-                std::cout << " ";
-                return 0;
+        if (tmp !=0)
+            size = size + 1;
         }
+return size;
+    }
 }
-return 0;
+int* SimpleNumbers::Print(int a, int b) {
+int size = 0;
+size = SizeOfArray(a, b);
+if ((size == -1) || (size == 0)) {
+       std::cout << "error";
+       return NULL;
+} else {
+int *array = new int[size];
+for (int i = a; i <= b; i++) {
+        int tmp = 0;
+        tmp = Check(i);
+        array[i] = i;
+        }
+return array;
 }
 }
