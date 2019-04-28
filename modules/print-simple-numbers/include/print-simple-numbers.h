@@ -3,7 +3,7 @@
 #ifndef MODULES_PRINT_SIMPLE_NUMBERS_INCLUDE_PRINT_SIMPLE_NUMBERS_H_
 #define MODULES_PRINT_SIMPLE_NUMBERS_INCLUDE_PRINT_SIMPLE_NUMBERS_H_
 
-#include <iostream>
+// #include <iostream>
 
 class SimpleNumbers {
  public:
